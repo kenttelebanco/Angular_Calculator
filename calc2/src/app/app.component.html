@@ -1,0 +1,26 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">    
+    
+  <h2 id="title">AppDev Calculator</h2>
+  <form>
+      <div class="form-group">
+        <label><b>First Number</b></label>
+          <input id="input1" class="form-control form-control-lg" name="firstNumber" type="number" placeholder="enter number" [(ngModel)]="firstNumber">
+      </div>
+
+      <div class="form-group">
+          <label><b>Second Number</b></label>
+          <input id="input2" class="form-control form-control-lg" name="secondNumber" type="number" placeholder="enter number" [(ngModel)]="secondNumber">
+
+      <div id="buttons">
+      <button (click)="onCalc('+')" type="button" id="operations" class="btn btn-primary">+</button>
+      <button (click)="onCalc('-')" type="button" id="operations"class="btn btn-primary">-</button>
+      <button (click)="onCalc('x')" type="button" id="operations"class="btn btn-primary">x</button>
+      <button (click)="onCalc('/')"type="button" id="operations"class="btn btn-primary">/</button>
+      </div>
+
+      <div>
+        <label for="">Result</label>
+        <h3>{{result}}</h3>
+      </div>
+
+      
